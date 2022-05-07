@@ -8,12 +8,19 @@
 
 </head>
 <body>
-    <h1 id="header">Device</h1>
+    <h1 id="header">Device:</h1>
     <script>
         var agent = navigator.userAgent;
         var obj = document.getElementById("header");
     console.log(obj);
-        obj.innerHTML = agent;
+    obj.innerHTML += "<br>";
+        obj.innerHTML += agent;
+        obj.innerHTML += "<br>";
+        obj.innerHTML += "<br>";
+
+        const isMobile = navigator.userAgentData.mobile; //resolves true/false
+        obj.innerHTML += "IsMobile: ";
+        obj.innerHTML += isMobile;
 
     </script>
 </body>
