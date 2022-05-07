@@ -24,11 +24,31 @@
     })(window,document,'script','dataLayer','GTM-TFLCMFN');</script>
     <!-- End Google Tag Manager -->
 
+<script type="text/javascript">
+  share = function(){ 
+      // Opens a pop-up with twitter sharing dialog
+      var shareURL = "http://twitter.com/share?"; //url base
+      //params
+      var params = {
+        url: "https://learnukraine.github.io/ \n\n", 
+        text: "Replace this with your text",
+//        via: "sometwitterusername",
+        hashtags: "LearnUkraine"
+      }
+      for(var prop in params) shareURL += '&' + prop + '=' + encodeURIComponent(params[prop]);
+      window.open(shareURL, '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+     }
+
+share();
+</script>
   </head>
   <body class="dark">
+
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFLCMFN"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
       <!-- End Google Tag Manager (noscript) -->
         <div id="unity-mobile-warning" style="
       position: absolute;
@@ -47,7 +67,10 @@
     </div>
 
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas"></canvas>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+  Share on Facebook
+</a>
+
     </div>
     <div id="loading-cover" style="display:none;">
       <div id="unity-loading-bar">
