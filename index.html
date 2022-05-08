@@ -23,13 +23,23 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TFLCMFN');</script>
     <!-- End Google Tag Manager -->
-
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "ded056df-5789-4e9f-97a5-a39dc757c22e",
+        });
+      });
+    </script>
   </head>
+
   <body class="dark">
-      <!-- Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFLCMFN"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
+
         <div id="unity-mobile-warning" style="
       position: absolute;
       width: 100%;
@@ -62,15 +72,15 @@
     <script>
       const hideFullScreenButton = "true";
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/Learn16.loader.js";
+      const loaderUrl = buildUrl + "/LearnUkraine.loader.js";
       const config = {
-        dataUrl: buildUrl + "/Learn16.data",
-        frameworkUrl: buildUrl + "/Learn16.framework.js",
-        codeUrl: buildUrl + "/Learn16.wasm",
+        dataUrl: buildUrl + "/LearnUkraine.data",
+        frameworkUrl: buildUrl + "/LearnUkraine.framework.js",
+        codeUrl: buildUrl + "/LearnUkraine.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kovnir",
         productName: "LearnUkraine",
-        productVersion: "0.1",
+        productVersion: "1.1",
       };
 
       const container = document.querySelector("#unity-container");
