@@ -5,7 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+<script>
+        ShareFB = function (text) {
+      url = 'https://www.facebook.com/sharer/sharer.php?' +
+      'u=https://learnukraine.github.io' +
+      '&picture=https://learnukraine.github.io/logo.png' +
+  //    '&title=TITLE!' +
+      '&quote=' + text;
+  //    '&description=""';
+      options = 'toolbar=0,status=0,resizable=1,width=626,height=436'; 
+      window.open(url,'sharer',options);  
+    }
+    ShareFB("Я заработа 800 очков!");
+</script>
 </head>
 <body>
     <h1 id="header">Device:</h1>
