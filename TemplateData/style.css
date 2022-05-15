@@ -6,6 +6,7 @@ html {
 }
 html, body {
     height: 100%;
+    background-color: #1C2E2D;
 }
 canvas {
     display: block;
@@ -20,7 +21,6 @@ body {
 #unity-canvas {
     width: 100%;
     height: 100%;
-    background: #231F20;
 }
 #loading-cover {
     position: absolute;
@@ -103,3 +103,65 @@ body {
 }
 
 
+.unity_mobile_warning {
+    width: 100%;
+    height: 100%;
+    display: none;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-shadow: 1px 1px 5px #000000;
+}
+.unity_mobile_warning a, a:hover, a:visited
+{
+    text-decoration:none;
+    color: white;
+}
+
+.unity_mobile_warning > .main
+{
+    padding: 20% 30px 200px 30px;
+    z-index: 1;
+}
+
+.unity_mobile_warning > .main > p
+{
+    font-size: 26px;
+}
+
+.unity_mobile_warning > .main > p.small
+{
+    font-size: 16px;
+    padding: 10px 20px 0px 20px
+}
+
+.unity_mobile_warning > .main > H2
+{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.kozak
+{
+    position: absolute;
+    width: 240px;
+    bottom: 0%;
+    left: -75px;
+}
+.contact
+{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact img
+{
+    position: relative;
+    width: 25px;
+    bottom: -5px;
+}
