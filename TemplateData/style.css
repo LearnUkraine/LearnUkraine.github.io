@@ -130,18 +130,18 @@ body {
 
 .unity_mobile_warning > .main > p
 {
-    font-size: 26px;
+    font-size: 19px;
 }
 
 .unity_mobile_warning > .main > p.small
 {
-    font-size: 16px;
+    font-size: 12px;
     padding: 10px 20px 0px 20px
 }
 
 .unity_mobile_warning > .main > H2
 {
-    font-size: 32px;
+    font-size: 24px;
     padding-bottom: 10px;
 }
 
